@@ -1,5 +1,5 @@
-# grant-explorer
+# comp-tools-explorer
 
-data visualization for computational grants
+data visualization for [collaborative computational projects](https://grants.czi.technology/human-cell-atlas/comp-tools/) for the Human Cell Atlas funded by CZI
 
-version 1.0.0
+highly customized, a bit hacky, and not likely to be easily reusable, but code provided here for inspiration!
