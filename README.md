@@ -1,2 +1,5 @@
-# comp-tools-explorer
-data visualization for exploring computational projects
+# grant-explorer
+
+data visualization for computational grants
+
+version 1.0.0
