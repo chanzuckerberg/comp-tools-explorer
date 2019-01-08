@@ -1,0 +1,196 @@
+{
+  "name": "groups",
+  "parent": "null",
+  "cluster": 8,
+  "offset": 0.1,
+  "title": "Collaborative computational tools for the human cell atlas",
+  "description": "The goal of the Human Cell Atlas project is to create a shared, open reference atlas of all cells in the healthy human body as a resource for studies of health and disease. This global endeavor will generate a large variety of molecular and imaging data across a wide range of modalities and spatial scales. To analyze, interpret, and disseminate these data, these 85 projects will focus on creating new computational tools, algorithms, visualizations, and benchmark datasets. In the spirit of open, collaborative development, researchers will work together and share progress with each other to evaluate the strengths of different approaches. They will also work with our science and engineering teams to help enhance and package their tools, and where appropriate, link them to the Human Cell Atlas Data Coordination Platform.",
+  "children": [
+    {
+      "name": "analysis",
+      "parent": "analysis",
+      "cluster": 7,
+      "title": "Analysis methods",
+      "description": "Algorithms and statistical techniques that make inferences about cells using a range of modalities. Some of these methods integrate multiple modalities to help define cell type, whereas others focus on best extracting and interepreting signals from a single modalities. Projects are grouped by their approach.",
+      "children": [
+        {
+          "name": "analysis 1a",
+          "parent": "analysis",
+          "cluster": 7,
+          "title": "Multiple data types",
+          "description": "Methods for analyzing a wider diversity of data types, including imaging as well as other sequencing methods, and integrating these data types together towards common definitions of cell type and state.",
+          "children": [
+            {
+              "name": "imaging",
+              "parent": "analysis 1a",
+              "size": 9,
+              "cluster": 7,
+              "title": "Imaging",
+              "description": "Approaches using imaging map the spatial distribution of gene expression within cells and across cells within tissues. Computational tools here focus on new algorithms for visualizing and extracting features from these data, and sharing them with other researchers."
+            },
+            {
+              "name": "analysis 2a",
+              "parent": "analysis 1a",
+              "cluster": 6,
+              "title": "Integration",
+              "description": "Methods for integrating datasets and normalizing unwanted sources of variation.",
+              "children": [
+                {
+                  "name": "multiomics",
+                  "parent": "analysis 2a",
+                  "size": 8,
+                  "cluster": 6,
+                  "title": "Multiomics",
+                  "description": "Projects that incorporate different characteristics of cells, like protein expression, epigenetics, and morphology, into the definition of cell type."
+                },
+                {
+                  "name": "manifold alignment",
+                  "parent": "analysis 2a",
+                  "size": 6,
+                  "cluster": 5,
+                  "title": "Manifold alignment",
+                  "description": "These projects use concepts from manifold learning to better integrate datasets coming from a variety of sources,  normalizing across variability due to noise in order to highlight the signal."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "sequencing",
+          "parent": "analysis",
+          "cluster": 4,
+          "title": "Sequencing data",
+          "description": "Projects focused primiarily on single-cell RNA sequencing and related techniques, using these high-throughput measurements to define cell types and states both within individual samples and across populations.",
+          "children": [
+            {
+              "name": "analysis 2c",
+              "parent": "analysis 1b",
+              "cluster": 4,
+              "offset": 0.5,
+              "title": "Modeling diversity",
+              "description": "Projects aiming to infer structure across population data.",
+              "children": [
+                {
+                  "name": "population variation",
+                  "parent": "analysis 2c",
+                  "size": 5,
+                  "cluster": 4,
+                  "title": "Population variation",
+                  "description": "Approaches to population-scale single-cell genomics, including new experimental techniques for higher-throughput measurements, and approaches to solving the related computational challenges."
+                },
+                {
+                  "name": "latent spaces",
+                  "parent": "analysis 2c",
+                  "size": 7,
+                  "cluster": 3,
+                  "title": "Latent spaces",
+                  "description": "This group of projects models the diversity of measurements obtained from single-cell RNA sequencing as arising from some latent, low-dimensional representation, and focuses on how to best learn and interpret that representation."
+                }]
+            },
+            {
+              "name": "cells",
+              "parent": "analysis 1b",
+              "cluster": 2,
+              "title": "Cells",
+              "description": "These analysis methods characterize the fundemental properties that define cells, including type, state, and location along developmental trajectories.",
+              "children": [
+                {
+                  "name": "analysis 3",
+                  "parent": "analysis 2b",
+                  "cluster": 2,
+                  "offset": -0.5,
+                  "title": "Cellular variation",
+                  "description": "These projects focus on more continuous forms of variation, including cell state and developmental trajectory.",
+                  "children": [
+                    {
+                      "name": "trajectories",
+                      "size": 9,
+                      "parent": "analysis 3",
+                      "cluster": 2,
+                      "title": "Trajectories",
+                      "description": "Projects that aim to understand the lineages of cell differentiation -- the paths between cell types -- based on patterns in gene expression."
+                    },
+                    {
+                      "name": "cell state",
+                      "size": 5,
+                      "parent": "analysis 3",
+                      "cluster": 1,
+                      "title": "Cell state",
+                      "description": "Projects that aim to determine how a particular cell type can vary in gene expression related to stages of the cell cycle."
+                    }]
+                },
+                {
+                  "name": "cell type",
+                  "size": 10,
+                  "parent": "analysis 2b",
+                  "cluster": 0,
+                  "title": "Cell type",
+                  "description": "Projects focused on the fundemental problem of defining a cell type from single-cell RNA sequencing data, possibly alongside other data modalities, including both algorithmic and ontological challenges."
+                }]
+            }]
+        }
+      ]
+    },
+    {
+      "name": "software",
+      "parent": "groups",
+      "cluster": 11,
+      "title": "Software tools",
+      "description": "A key goal of the Human Cell Atlas, and the single cell biology community more generally, is to make data widely accessible and usable, and computational algorithms fast, robust, and easy to use. These software efforts aim to accomplish those goals, in some cases by building on top of the Human Cell Atlas Data Coordination Platform.",
+      "children": [
+        {
+          "name": "access",
+          "parent": "software",
+          "cluster": 11,
+          "offset": 0.5,
+          "title": "Access",
+          "description": "These projects focus on a variety of ways to make data and analyses more accessible, including interactive data visualizations, easy to use APIs, and better computational tools.",
+          "children": [
+            {
+              "name": "portals",
+              "parent": "software 1a",
+              "size": 9,
+              "cluster": 11,
+              "title": "Portals",
+              "description": "Projects building portals to data and analyses, including interactive user experiences for browing datasets and interacting with analysis pipelines, as well as novel visualizations to make new kinds of algorithms easier to understand."
+            },
+            {
+              "name": "bioconductor",
+              "parent": "software 1a",
+              "size": 8,
+              "cluster": 10,
+              "title": "Bioconductor",
+              "description": "Bioconductor is a widely-used collection of open-source software packages for the genomics community, and these projects focus on enabling these tools to work with Human Cell Atlas data, and better handle the scale and complexity of the data likely to be encountered."
+            }
+          ]
+        },
+        {
+          "name": "foundations",
+          "parent": "software",
+          "cluster": 9,
+          "offset": 0.5,
+          "title": "Foundations",
+          "description": "Projects addressing basic computational needs faced by large genomic and imaging datasets.",
+          "children": [
+            {
+              "name": "compression",
+              "parent": "software 1b",
+              "size": 4,
+              "cluster": 9,
+              "title": "Compression",
+              "description": "These projects leverage information theory to design better compression and feature extraction methods for single-cell RNA sequencing data, enabling cheaper storage of larger datasets, and possibly new insights into the structure of the data itself."
+            },
+            {
+              "name": "scale",
+              "parent": "software 1b",
+              "size": 5,
+              "cluster": 8,
+              "title": "Scale",
+              "description": "These projects leverage new distributed computing methods to enable large-scale computation on the massive single-cell RNA sequencing datasets that the Human Cell Atlas will generate."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
